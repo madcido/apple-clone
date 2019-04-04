@@ -3,8 +3,8 @@ body{
   font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 img{
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 a{
   text-decoration: none;
@@ -13,19 +13,16 @@ a{
 
 /* beginning of flex stuff */
 .row{
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 .col{
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.space-evenly{
-  justify-content: space-evenly;
 }
 .align-start{
   align-items: flex-start;
@@ -35,45 +32,46 @@ a{
 /* class selectors below */
 .bg-img{
   display: block;
-  position: absolute;
-  top: -700px;
   height: 1200px;
   left: 0;
+  position: absolute;
   right: 0;
+  top: -700px;
   z-index: -1;
 }
 
 .logo{
   height: 21px;
-  width: 21px;
   position: relative;
   top: 5px;
+  width: 21px;
 }
 
 .navbar{
+  background: linear-gradient(#606060 1%,rgba(0,0,0,0) 2%, rgba(0,0,0,0) 98%, #606060 99%), linear-gradient(#777777, #606060 25%, #606060 50%, #909090 90%, #a0a0a0);
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
-  width: 73%;
   height: 37px;
   margin: 20px auto;
-  border-radius: 6px;
-  background: linear-gradient(#606060 1%,rgba(0,0,0,0) 2%, rgba(0,0,0,0) 98%, #606060 99%), linear-gradient(#777777, #606060 25%, #606060 50%, #909090 90%, #a0a0a0);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   position: relative;
+  width: 73%;
 }
 
 .navbar a{
-  height: 100%;
-  width: 10.8%;
+  background: linear-gradient(90deg, rgba(200,200,200,0.2) 0.5%, rgba(0,0,0,0) 2%, rgba(0,0,0,0) 98%, rgba(200,200,200,0.3) 99.5%);
   border: none;
   border-right: 1px solid #505050;
-  background: linear-gradient(90deg, rgba(200,200,200,0.2) 0.5%, rgba(0,0,0,0) 2%, rgba(0,0,0,0) 98%, rgba(200,200,200,0.3) 99.5%);
+  box-sizing: border-box;
   color: white;
   font-size: 13px;
+  height: 100%;
   line-height: 37px;
   text-align: center;
+  width: 10.8%;
 }
 
-.navbar a.first-button{
+.navbar .first-button{
   border-radius: 6px 0 0 6px;
 }
 
@@ -82,32 +80,32 @@ a{
 }
 
 .searchbar label{
-  box-sizing: border-box;
+  background-color: transparent;
   border: 1px solid rgba(100, 100, 100, 0.2);
   border-radius: 11px;
-  background-color: transparent;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.7) inset;
+  box-sizing: border-box;
   height: 22px;
-  width: 100px;
   margin: 0 15px;
   transition: width 0.5s, border 0.5s, background-color 0.5s, box-shadow 0.5s;
+  width: 100px;
 }
 
 .searchbar label:focus-within{
   background-color: white;
   border: none;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.9) inset;
-  width: 150px;
   transition: width 0.5s, border 0.5s, background-color 0.5s, box-shadow 0.5s;
+  width: 150px;
 }
 
 .searchbar img{
   height: 14px;
-  width: 14px;
+  left: 1px;
   margin-left: 4px;
   position: relative;
   top: 3px;
-  left: 1px;
+  width: 14px;
 }
 
 .searchbar label:focus-within img{
@@ -116,20 +114,20 @@ a{
 }
 
 .searchbar input{
-  box-sizing: border-box;
-  border: none;
   background: none;
-  width: 65%;
-  height: 100%;
+  border: none;
+  box-sizing: border-box;
   font-size: 12px;
+  height: 100%;
+  width: 65%;
 }
 
 .slogan{
   box-sizing: border-box;
-  width: 50%;
   height: 240px;
   margin: 100px auto;
   text-align: center;
+  width: 50%;
 }
 
 .slogan a{
@@ -138,22 +136,22 @@ a{
 
 .slogan h1{
   font-size: 54px;
-  padding: 0;
-  margin: 10px 0;
   font-weight: 100;
+  margin: 10px 0;
+  padding: 0;
 }
 
 .slogan h2{
   font-size: 30px;
-  padding: 0;
-  margin: 10px 0;
   font-weight: 100;
+  margin: 10px 0;
+  padding: 0;
 }
 .slogan h3{
   font-size: 26px;
-  padding: 0;
-  margin: 10px 0;
   font-weight: 100;
+  margin: 10px 0;
+  padding: 0;
 }
 
 .video-link:hover{
@@ -161,10 +159,10 @@ a{
 }
 
 .thumbnails-container{
-  position: absolute;
-  left: 0;
-  right: 0;
   border: 1px solid white;
+  left: 0;
+  position: absolute;
+  right: 0;
 }
 
 .thumbnail{
@@ -172,11 +170,11 @@ a{
 }
 
 .footer{
-  width: 73%;
+  color: gray;
+  font-size: 9px;
   height: 100px;
   margin: 300px auto 0 auto;
-  font-size: 9px;
-  color: gray;
+  width: 73%;
 }
 
 .footer div{
@@ -196,17 +194,16 @@ a{
   text-decoration: underline;
 }
 
-.footer a.bar{
-  margin-left: 4px;
+.footer .bar{
   border-left: 1px solid silver;
+  margin-left: 4px;
   padding-left: 5px;
 }
 
 .flag {
-  display: inline;
   height: 15px;
-  width: 15px;
   margin-left: 4px;
   position: relative;
   top: 3px;
+  width: 15px;
 }
