@@ -5,4 +5,4 @@ Project specification: clone an old Apple webpage
 Author: Fabio Carmo
 
 Preview:
-https://htmlpreview.github.io/?https://github.com/madcido/apple-clone/blob/development/index.html
+https://htmlpreview.github.io/?https://github.com/madcido/apple-clone/blob/master/index.html
