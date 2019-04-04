@@ -1,0 +1,209 @@
+/* tag selectors below */
+body{
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+/* tag selectors above */
+
+/* beginning of flex stuff */
+.row{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.col{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.align-start{
+  align-items: flex-start;
+}
+/* end of flex stuff */
+
+/* class selectors below */
+.bg-img{
+  display: block;
+  height: 1200px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -700px;
+  z-index: -1;
+}
+
+.logo{
+  height: 21px;
+  position: relative;
+  top: 5px;
+  width: 21px;
+}
+
+.navbar{
+  background: linear-gradient(#606060 1%,rgba(0,0,0,0) 2%, rgba(0,0,0,0) 98%, #606060 99%), linear-gradient(#777777, #606060 25%, #606060 50%, #909090 90%, #a0a0a0);
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  height: 37px;
+  margin: 20px auto;
+  position: relative;
+  width: 73%;
+}
+
+.navbar a{
+  background: linear-gradient(90deg, rgba(200,200,200,0.2) 0.5%, rgba(0,0,0,0) 2%, rgba(0,0,0,0) 98%, rgba(200,200,200,0.3) 99.5%);
+  border: none;
+  border-right: 1px solid #505050;
+  box-sizing: border-box;
+  color: white;
+  font-size: 13px;
+  height: 100%;
+  line-height: 37px;
+  text-align: center;
+  width: 10.8%;
+}
+
+.navbar .first-button{
+  border-radius: 6px 0 0 6px;
+}
+
+.navbar a:hover{
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.25));
+}
+
+.searchbar label{
+  background-color: transparent;
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  border-radius: 11px;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.7) inset;
+  box-sizing: border-box;
+  height: 22px;
+  margin: 0 15px;
+  transition: width 0.5s, border 0.5s, background-color 0.5s, box-shadow 0.5s;
+  width: 100px;
+}
+
+.searchbar label:focus-within{
+  background-color: white;
+  border: none;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.9) inset;
+  transition: width 0.5s, border 0.5s, background-color 0.5s, box-shadow 0.5s;
+  width: 150px;
+}
+
+.searchbar img{
+  height: 14px;
+  left: 1px;
+  margin-left: 4px;
+  position: relative;
+  top: 3px;
+  width: 14px;
+}
+
+.searchbar label:focus-within img{
+  filter: contrast(0%);
+  top: 4px;
+}
+
+.searchbar input{
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  font-size: 12px;
+  height: 100%;
+  width: 65%;
+}
+
+.slogan{
+  box-sizing: border-box;
+  height: 240px;
+  margin: 100px auto;
+  text-align: center;
+  width: 50%;
+}
+
+.slogan a{
+  color: white;
+}
+
+.slogan h1{
+  font-size: 54px;
+  font-weight: 100;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.slogan h2{
+  font-size: 30px;
+  font-weight: 100;
+  margin: 10px 0;
+  padding: 0;
+}
+.slogan h3{
+  font-size: 26px;
+  font-weight: 100;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.video-link:hover{
+  text-decoration: underline;
+}
+
+.thumbnails-container{
+  border: 1px solid white;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.thumbnail{
+  border: 1px solid white;
+}
+
+.footer{
+  color: gray;
+  font-size: 9px;
+  height: 100px;
+  margin: 300px auto 0 auto;
+  width: 73%;
+}
+
+.footer div{
+  width: 50%;
+}
+
+.footer p{
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.footer a{
+  color: #08c;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
+
+.footer .bar{
+  border-left: 1px solid silver;
+  margin-left: 4px;
+  padding-left: 5px;
+}
+
+.flag {
+  height: 15px;
+  margin-left: 4px;
+  position: relative;
+  top: 3px;
+  width: 15px;
+}
